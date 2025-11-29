@@ -1,0 +1,8 @@
+[packages]
+apt = ["lua5.4", "luarocks"]
+
+[phases.setup]
+cmds = [
+  "luarocks install luasocket",
+  "luarocks install dkjson"
+]
