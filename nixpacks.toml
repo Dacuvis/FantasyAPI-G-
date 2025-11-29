@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["lua", "gcc", "make", "luarocks"]
+nixPkgs = ["lua", "gcc", "luarocks"]
 
 [phases.install]
 cmds = [
