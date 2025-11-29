@@ -1,8 +1,11 @@
-[packages]
-apt = ["lua5.4", "luarocks"]
-
 [phases.setup]
+nixPkgs = ["lua", "luarocks"]
+
+[phases.install]
 cmds = [
   "luarocks install luasocket",
   "luarocks install dkjson"
 ]
+
+[start]
+cmd = "lua Server.lua"
