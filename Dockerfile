@@ -1,6 +1,5 @@
 FROM debian:bullseye-slim
 
-# Install build dependencies for luarocks native modules
 RUN apt-get update && \
     apt-get install -y \
         lua5.2 \
