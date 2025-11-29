@@ -1,4 +1,7 @@
-package.path = "./lua_modules/?.lua;" .. package.path
+-- Tambahkan untuk Nix/luarocks compatibility
+package.path = "./lua_modules/?.lua;/workspace/.nix-profile/share/lua/5.1/?.lua;" .. package.path
+package.cpath = "/workspace/.nix-profile/lib/lua/5.1/?.so;" .. package.cpath
+
 local socket = require("socket")
 local json = require("dkjson")
 
