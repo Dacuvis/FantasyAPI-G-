@@ -1,18 +1,22 @@
 FROM debian:bullseye-slim
 
-# 1. Install dependencies
+# Install build dependencies for luarocks native modules
 RUN apt-get update && \
-    apt-get install -y lua5.2 luarocks && \
-    luarocks install luasocket && \
-    luarocks install dkjson && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+    apt-get install -y \
+        lua5.2 \
+        luarocks \
+        gcc \
+        make \
+        build-essential \
+        pkg-config \
+        liblua5.2-dev \
+        && luarocks install luasocket \
+        && luarocks install dkjson \
+        && apt-get clean \
+        && rm -rf /var/lib/apt/lists/*
 
-# 2. Copy source code ke image
 WORKDIR /app
 COPY . .
 
-# 3. Expose port Railway akan connect ke variable PORT
 ENV PORT=8080
-
-# 4. Jalankan server Lua
 CMD ["lua5.2", "Server.lua"]
