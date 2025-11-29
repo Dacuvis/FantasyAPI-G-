@@ -1,5 +1,5 @@
 [build]
-builder = "ubuntu:22.04"
+builder = "nixpacks"
 
 [deploy]
 start = "lua5.4 Server.lua"
