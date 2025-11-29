@@ -1,10 +1,10 @@
 [phases.setup]
-nixPkgs = ["lua", "luarocks"]
+nixPkgs = ["lua5_2", "gcc", "make"]
 
 [phases.install]
 cmds = [
-  "luarocks install luasocket",
-  "luarocks install dkjson"
+    "luarocks install luasocket",
+    "luarocks install dkjson"
 ]
 
 [start]
