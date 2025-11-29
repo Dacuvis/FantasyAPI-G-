@@ -1,5 +1,9 @@
 [phases.setup]
-nixPkgs = ["lua", "luaPackages.luasocket", "luaPackages.dkjson"]
+nixPkgs = [
+  "lua52",
+  "luaPackages.luasocket",
+  "luaPackages.dkjson"
+]
 
 [start]
-cmd = "lua Server.lua"
+cmd = "/workspace/.nix-profile/bin/lua Server.lua"
