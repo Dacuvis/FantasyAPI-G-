@@ -1,3 +1,4 @@
+package.path = "./lua_modules/?.lua;" .. package.path
 local socket = require("socket")
 local json = require("dkjson")
 
