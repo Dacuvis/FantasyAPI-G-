@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["lua_5_4"]
+nixPkgs = ["lua"]
 
 [phases.install]
 cmds = []
