@@ -2,4 +2,4 @@
 builder = "ubuntu:22.04"
 
 [deploy]
-start = "lua5.4 server.lua"
+start = "lua5.4 Server.lua"
