@@ -1,8 +1,8 @@
 [phases.setup]
 nixPkgs = [
-  "lua5_2",
-  "lua5_2Packages.luasocket",
-  "lua5_2Packages.dkjson"
+  "lua",
+  "luaPackages.luasocket",
+  "luaPackages.dkjson"
 ]
 
 [start]
