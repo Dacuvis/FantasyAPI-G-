@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["lua5_2", "gcc", "make"]
+nixPkgs = ["lua_5_4", "gcc", "gnuMake"]
 
 [phases.install]
 cmds = [
