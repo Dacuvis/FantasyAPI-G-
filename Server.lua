@@ -1,15 +1,15 @@
 local socket = require("socket")
 local json = require("dkjson")
 
-local server = assert(socket.bind("0.0.0.0",8080))
-print("Server berjalan di http://0.0.0.0:8080")
-
+local port = tonumber(os.getenv("PORT")) or 8080
+local server = assert(socket.bind("0.0.0.0", port))
+print("Server berjalan di port " .. port)
 
 local function read_data()
     local file, err = io.open("./data/c.json", "r")
     if not file then
         print("File gagal dibuka:", err)
-        return nil
+        return {}
     end
 
     local reads = file:read("*a")
@@ -18,7 +18,7 @@ local function read_data()
     local data, decode_err = json.decode(reads)
     if not data then
         print("JSON decode error:", decode_err)
-        return nil
+        return {}
     end
     return data
 end
