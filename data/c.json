@@ -1,0 +1,201 @@
+{
+    "items_grade_A": [
+        {
+            "nama": "Black Sword",
+            "grade": "A+",
+            "attribute": {
+                "damage": 17,
+                "attack_speed": 20,
+                "durability": 400
+            },
+            "skills": [
+                {"skill":"Night Sky","desk":"Membuat langit menjadi gelap gulita","skill_condition":"Pasive"},
+                {"skill":"Rebond of the king","desk":"???","skill_condition":"Active"}
+            ]
+        },
+        {
+            "nama": "Soul Scythe",
+            "grade": "A+",
+            "attribute": {
+                "damage": 10,
+                "attack_speed": 42,
+                "durability": 320
+            },
+            "skills": [
+                {"skill":"Greed Path","desk":"Tranformasi,tubuh akan di kendalikan oleh entitas '???'","skill_condition":"Pasive"},
+                {"skill":"Masocist Expert","desk":"Semakin di serang,semakin cepat attack_speed meningkat,peningkatan attack_speed dari 1-17%","skill_condition":"Active"},
+                {"skill":"Lick Master","desk":"Indra penciuman meningkat ketika sekarat","skill_condition":"Pasive"}
+            ]
+        },
+        {
+            "nama": "Eye of Father Odin",
+            "grade": "A",
+            "attribute": {
+                "durability": 1945,
+                "durability_regen": 67,
+                "regen_speed_second": 1
+            },
+            "skills": [
+                {"skill":"Absolute Truth","desk":"Skill yang bisa membuat orang menjadi jujur","skill_condition":"Pasive"}
+            ]
+        },
+        {
+            "nama": "Poison Dagger",
+            "grade": "A",
+            "attribute": {
+                "damage": 12,
+                "attack_speed": 35,
+                "durability": 500
+            },
+            "skills": [
+                {"skill": "Poison Attack","desk": "Memberi efek poison setiap hit","skill_condition": "Active"}
+            ]
+        }
+    ],
+
+    "armor": [
+        {
+            "id": 1,
+            "nama": "Shadow",
+            "parts": {
+                "helmet": {
+                    "nama": "Shadow Helmet",
+                    "grade": "A",
+                    "attribute": {
+                        "defense": 200,
+                        "durability": 700,
+                        "knockback_resistance": 0,
+                        "element_resistance": {}
+                    },
+                    "skills": [
+                        {
+                            "nama_skill": "All Who can see",
+                            "effect_skill": "Bisa melihat di malam hari",
+                            "activasion_skill": "Active"
+                        },
+                        {
+                            "nama_skill": "Mind-Resistance",
+                            "effect_skill": "Mencegah penyihir untuk memainkan pikiran kita",
+                            "activasion_skill": "Passive"
+                        }
+                    ]
+                },
+                
+                "chestplate": {
+                    "nama": "Shadow Chestplate",
+                    "grade": "A",
+                    "attribute": {
+                        "defense": 500,
+                        "durability": 1200,
+                        "knockback_resistance": 0,
+                        "element_resistance": {}
+                    },
+                    "skills": [
+                        {
+                            "nama_skill": "Shadow Body",
+                            "effect_skill": "Memperkuat Defense sebanyak 1% setiap detik ketika sekarat(Maks penguatan 20%)",
+                            "activasion_skill": "Passive"
+                        }
+                    ]
+                },
+
+                "leggings": {
+                    "nama": "Shadow Leggings",
+                    "grade": "A",
+                    "attribute": {
+                        "defense": 400,
+                        "durability": 1000,
+                        "knockback_resistance": 0,
+                        "element_resistance": {}                        
+                    },
+                    "skills": [
+                        {
+                            "nama_skill": "Fast Body",
+                            "effect_skill": "Membuat Tubuh bergerak lebih cepat",
+                            "activasion_skill": "Active"
+                        }
+                    ]
+                },
+
+                "boots": {
+                    "nama": "Shadow Boots",
+                    "grade": "A",
+                    "attribute": {
+                        "defense": 380,
+                        "durability": 800,
+                        "knockback_resistance": 0,
+                        "element_resistance": {}    
+                    },
+                    "skills": [
+                        {
+                            "nama_skill": "Shadow Step",
+                            "effect_skill": "Membuat kaki menjadi cepat di malam hari",
+                            "activasion_skill": "Passive"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": 2,
+            "nama": "Flame",
+            "parts": {
+                "helmet": {
+                    "nama": "Flame Helmet",
+                    "grade": "A-",
+                    "attribute": {
+                        "defense": 200,
+                        "durability": 600,
+                        "knockback_resistance": 0,
+                        "element_resistance": {
+                            "fire_resistance": 9
+                        }
+                    },
+                    "skills": [{}]
+                },
+
+                "chestplate": {
+                    "nama": "Flame Chestplate",
+                    "grade": "A-",
+                    "attribute": {
+                        "defense": 250,
+                        "durability": 700,
+                        "knockback_resistance": 0,
+                        "element_resistance": {
+                            "fire_resistance": 9
+                        }                        
+                    },
+                    "skills": [{}]
+                },
+ 
+                "leggings": {
+                    "nama": "Flame Leggings",
+                    "grade": "A-",
+                    "attribute": {
+                        "defense": 224,
+                        "durability": 620,
+                        "knockback_resistance": 0,
+                        "element_resistance": {
+                            "fire_resistance": 9
+                        }                        
+                    },
+                    "skills": [{}]
+                } ,
+                
+                "boots": {
+                    "nama": "Flame Boots",
+                    "grade": "A-",
+                    "attribute": {
+                        "defense": 180,
+                        "durability": 570,
+                        "knockback_resistance": 0,
+                        "element_resistance": {
+                            "fire_resistance": 9
+                        }                        
+                    },
+                    "skills": [{}]
+                }
+            }
+        }
+    ]
+}
